@@ -1,0 +1,444 @@
+html {
+    font-size: 12px;
+}
+
+body {
+    font-family: "Sawarabi Gothic";
+}
+
+
+/* ヘッダーはじまり
+-------------------------------------- */
+header {
+    /* background-color: #fffbec; */
+    display: table;
+    padding: 50px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* グラデ
+-------------------------------------- */
+#wrapper .bigger{
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.14) 50%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,rgba(0,0,0,0.14)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.14) 50%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.14) 50%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.14) 50%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.14) 50%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#24000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+header .logo {
+    display: table-cell;
+    overflow: hidden;
+    vertical-align: middle;
+    padding: 0 0 0 50px;
+    cursor: pointer;
+}
+
+.big-logo {
+    display: block;
+    width: 400px;
+    filter: drop-shadow(0.1rem 0.2rem 0.1rem #ffffff3f);
+}
+
+.header-Tagline {
+    padding: 0 0 0 50px;
+    font-size: clamp(0.1rem, 1.5vw + 0.1rem, 1.5rem);
+    color: #49b9d3;
+}
+
+.inner {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#wrapper nav ul li{
+display:inline-block;
+}
+
+#wrapper nav ul li a {
+    color: rgb(123 64 64);
+}
+
+#main-menu {
+    text-align: right;
+    font-size: 0;
+    line-height: 1;
+    margin: 0 50px 0 0;
+}
+
+#main-menu>li {
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    padding: 2px 0;
+}
+
+#main-menu>li>a {
+    font-size: clamp(0.1rem, 1.5vw + 0.1rem, 2.5rem);
+    line-height: 1.2;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    color: rgb(123 64 64);
+}
+
+.header-btn {
+    border-radius: 0.5rem;
+    height: clamp(0.1rem, 3vw + 0.1rem, 3rem);
+    width: 100%;
+    margin-right: 0.1rem;
+    font-size: clamp(0.1rem, 1vw + 0.1rem, 1rem);
+}
+/* -----------------------------------
+ヘッダーおわり */
+
+
+/* メイン画像はじまり
+-------------------------------------- */
+.main-img-box {
+    position: relative;
+    display: flex;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    aspect-ratio: 42 / 20;
+    font-family: "M PLUS Rounded 1c";
+}
+
+.main-img-cover {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 42 / 20;
+    background-color: rgba(123, 64, 64, 0.9);
+}
+
+.main-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.main-text {
+    text-shadow: 0.1rem 0.2rem 1rem #808080;
+    font-size: clamp(0.1rem, 3vw + 0.1rem, 7rem);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    width: 100%;
+    color: white;
+}
+/* -----------------------------------
+メイン画像おわり */
+
+#contents {
+    width: 100%;
+    position: relative;
+    font-size: 120%;
+}
+
+.container {
+    width: 960px;
+    width: 96%;
+    margin: 0 auto 80px;
+}
+
+#contents .container {
+    margin-bottom: 80px;
+}
+
+#contents > dl {
+    margin-top: 80px;
+}
+
+.basic-section-set {
+    display: table;
+}
+
+
+.notice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 5 / 2;
+    overflow-y: auto;
+    scroll-snap-type: y;
+}
+
+.notice-box {
+    width: 61.8%;
+    height: 61.8%;
+    margin-top: 2.5rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.notice-title {
+    display: flex;
+    justify-content: center;
+    font-size: clamp(0.1rem, 2vw + 0.1rem, 4rem);
+    position: relative;
+}
+
+.detail-btn {
+    border-radius: 2rem;
+    padding: 0rem 2rem;
+    font-size: clamp(0.1rem, 2vw + 0.1rem, 2rem);
+}
+
+.notice-btn {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    border-radius: 2rem;
+    padding: 0rem 2rem;
+    font-size: clamp(0.1rem, 2vw + 0.1rem, 2rem);
+}
+
+.notice-list {
+    display: flex;
+    list-style: none;
+    border-bottom: 1px solid;
+}
+
+.notice-date {
+    width: 30%;
+    font-size: clamp(0.1rem, 2vw + 0.1rem, 2rem);
+}
+
+.notice-text {
+    font-size: clamp(0.1rem, 2vw + 0.1rem, 2rem);
+}
+
+.introduce {
+    width: 100%;
+    aspect-ratio: 5 / 2;
+    display: flex;
+    text-align: flex-start;
+    justify-content: center;
+}
+
+.intro-box {
+    display:flex;
+    text-align: center;
+    align-items: center;
+    width: 85%;
+    height: 70%;
+}
+
+.intro-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    color: white;
+}
+
+.intro-main {
+    height: 100%;
+    position: relative;
+    margin: auto;
+    aspect-ratio: 1.5 / 1 ;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro-title {
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+    font-size: clamp(0.1rem, 2vw + 0.1rem, 5rem);
+    font: bold;
+}
+
+.intro-sub-title {
+    font-size: clamp(0.1rem, 2vw + 0.1rem, 4rem);
+    font: bold;
+}
+
+.intro-text {
+    font-size: clamp(0.1rem, 3vw + 0.1rem, 2.5rem);
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.intro-btn {
+    font-size: clamp(0.1rem, 1vw + 0.1rem, 1.5rem);
+}
+
+.reason {
+    width: 100%;
+    aspect-ratio: 5 / 2;
+}
+
+@media screen and (max-width: 600px) {
+    #wrapper nav ul li a {
+        color: rgb(255 255 255);
+    }
+
+    #wrapper nav {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 61.8%;
+        height: 100%;
+        background:rgb(51, 51, 51);
+        font-size: 16px;
+        z-index: 2;
+
+    }
+
+
+    #wrapper .btn-gnavi {
+        position: fixed;
+        top: 30px;
+        right: 20px;
+        width: 30px;
+        height: 24px;
+        z-index: 3;
+        box-sizing: border-box;
+        cursor: pointer;
+        -webkit-transition: all 750ms;
+        transition: all 750ms;
+    }
+
+    #wrapper .btn-gnavi span {
+        position: absolute;
+        width: 30px;
+        height: 4px;
+        background: #666;
+        border-radius: 10px;
+        -webkit-transition: all 750ms;
+        transition: all 750ms;
+    }
+
+    #wrapper .btn-gnavi span:nth-child(1) {
+        top: 0;
+    }
+
+    #wrapper .btn-gnavi span:nth-child(2) {
+        top: 10px;
+    }
+
+    #wrapper .btn-gnavi span:nth-child(3) {
+        top: 20px;
+    }
+
+    #wrapper .btn-gnavi.open {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    #wrapper .btn-gnavi.open span {
+        background: #fff;
+    }
+
+    #wrapper .btn-gnavi.open span {
+        width: 24px;;
+    }
+    #wrapper .contents section p {
+        position: absolute;
+        top: 50%;
+        width: 30%;
+        line-height: 1.4;
+        font-size: 20px;
+        color: #fff;
+        text-shadow: 0 0 6px rgba(102, 102, 102, 0.482);
+    }
+
+    #wrapper .contents section:nth-child(odd) p {
+        left: 10%;
+    }
+
+    #wrapper .contents section:nth-child(even) p {
+        right: 10%;
+    }
+
+    .header-text-area {
+    align-items: start;
+    margin: 0;
+    }
+
+    #wrapper nav ul li {
+        display: list-item;
+        list-style-type: none;
+        text-transform: uppercase;
+        padding: 0.5em;
+    }
+
+    header {
+        aspect-ratio: 5 / 1;
+    }
+
+    .header-hide-box {
+        width: 100%;
+        aspect-ratio: 5 / 1;
+    }
+
+    .header-area {
+        aspect-ratio: 8 / 1;
+    }
+
+    .menu-text {
+        padding: 0;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .menu {
+        padding: 0;
+        margin: 43px auto;
+    }
+
+    .notice-box {
+        overflow-y: auto;
+        scroll-snap-type: y;
+    }
+
+    .notice-title {
+        margin: 0.5rem 0 0.2rem 0;
+        font-size: 1rem;
+        top: 10%;
+        right: 42.5%;
+    }
+
+    .notice-list {
+        display: block;
+        margin-bottom: 0.3rem;
+        scroll-snap-align: center;
+    }
+
+    .notice-btn {
+        font-size: 0.6rem;
+        top: 14%;
+        right: 20%;
+        padding: 0rem 0.5rem;
+    }
+
+    .main-img-box {
+        aspect-ratio: 100 / 80;
+    }
+
+    .main-img-cover {
+        aspect-ratio: 100 / 80;
+    }
+
+    .notice {
+        aspect-ratio: 100 / 80;
+    }
+}
